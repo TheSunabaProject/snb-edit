@@ -14,7 +14,7 @@ import org.apache.commons.io.IOUtils;
 /*
 using System.Collections.Generic;
 
-namespace Trowel.Editor.GameFiles
+namespace SNBEdit.Editor.GameFiles
 {
     public static class SteamGames
     {
@@ -64,7 +64,7 @@ public class ExtractBlobData
         fw.write("\r\n");
         fw.write("using System.Collections.Generic;\r\n");
         fw.write("\r\n");
-        fw.write("namespace Trowel.Editor.GameFiles\r\n");
+        fw.write("namespace SNBEdit.Editor.GameFiles\r\n");
         fw.write("{\r\n");
         fw.write("    public static class SteamGames\r\n");
         fw.write("    {\r\n");

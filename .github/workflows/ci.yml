@@ -17,9 +17,9 @@ jobs:
     runs-on: windows-latest
 
     env:
-      Solution_Name: Trowel.sln
-      Wap_Project_Directory: Trowel.Packaging         
-      Wap_Project_Path: Trowel.Packaging\Trowel.Packaging.wapproj
+      Solution_Name: SNBEdit.sln
+      Wap_Project_Directory: SNBEdit.Packaging         
+      Wap_Project_Path: SNBEdit.Packaging\SNBEdit.Packaging.wapproj
 
     steps:
     - name: Checkout

@@ -1,0 +1,11 @@
+﻿{
+    "@Meta": {
+        "Base": "SNBEdit.Editor",
+        "Language": "fr",
+        "LanguageDescription": "Français / French",
+        "Inherit": "en"
+    },
+    "ShellSetup": {
+        "Title": "Editeur SNBEdit"
+    }
+}
