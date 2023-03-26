@@ -1,0 +1,52 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net6.0-windows</TargetFramework>
+	  <RuntimeIdentifiers>win-x64;win-x86</RuntimeIdentifiers>
+    <OutputType>Library</OutputType>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImportWindowsDesktopTargets>true</ImportWindowsDesktopTargets>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <NoWarn>CS4014</NoWarn>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug %28Extra%29|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug %28Extra%29\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;DEBUG_EXTRA</DefineConstants>
+    <NoWarn>CS4014</NoWarn>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Update="Scene\SceneBufferAllocationSidebarPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Translations\SunabaSDK.BspEditor.Rendering.en.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Translations\SunabaSDK.BspEditor.Rendering.fr.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Sprites\lightbulb.spr">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Sprites\speaker.spr">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Translations\SunabaSDK.BspEditor.Rendering.it.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SunabaSDK.BspEditor\SunabaSDK.BspEditor.csproj" />
+    <ProjectReference Include="..\SunabaSDK.Common\SunabaSDK.Common.csproj" />
+    <ProjectReference Include="..\SunabaSDK.DataStructures\SunabaSDK.DataStructures.csproj" />
+    <ProjectReference Include="..\SunabaSDK.Filesystem\SunabaSDK.Filesystem.csproj" />
+    <ProjectReference Include="..\SunabaSDK.Providers\SunabaSDK.Providers.csproj" />
+    <ProjectReference Include="..\SunabaSDK.Rendering\SunabaSDK.Rendering.csproj" />
+    <ProjectReference Include="..\SunabaSDK.Shell\SunabaSDK.Shell.csproj" />
+  </ItemGroup>
+</Project>

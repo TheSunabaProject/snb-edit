@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+	<RuntimeIdentifiers>win-x64;win-x86</RuntimeIdentifiers>
+    <OutputType>Library</OutputType>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="System.Numerics.Vectors">
+      <Version>4.5.0</Version>
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="Models\Animation.cs" />
+    <Compile Remove="Models\AnimationFrame.cs" />
+    <Compile Remove="Models\BodyPart.cs" />
+    <Compile Remove="Models\Bone.cs" />
+    <Compile Remove="Models\BoneAnimationFrame.cs" />
+    <Compile Remove="Models\BoneWeighting.cs" />
+    <Compile Remove="Models\Mesh.cs" />
+    <Compile Remove="Models\MeshVertex.cs" />
+    <Compile Remove="Models\Model.cs" />
+    <Compile Remove="Models\Texture.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SunabaSDK.Common\SunabaSDK.Common.csproj" />
+  </ItemGroup>
+</Project>

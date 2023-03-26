@@ -17,9 +17,9 @@ jobs:
     runs-on: windows-latest
 
     env:
-      Solution_Name: SNBEdit.sln
-      Wap_Project_Directory: SNBEdit.Packaging         
-      Wap_Project_Path: SNBEdit.Packaging\SNBEdit.Packaging.wapproj
+      Solution_Name: SunabaSDK.sln
+      Wap_Project_Directory: SunabaSDK.Packaging         
+      Wap_Project_Path: SunabaSDK.Packaging\SunabaSDK.Packaging.wapproj
 
     steps:
     - name: Checkout

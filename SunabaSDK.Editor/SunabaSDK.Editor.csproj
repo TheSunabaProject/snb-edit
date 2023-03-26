@@ -1,0 +1,43 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net6.0-windows</TargetFramework>
+	<RuntimeIdentifiers>win-x86;win-x64</RuntimeIdentifiers>
+    <OutputType>WinExe</OutputType>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImportWindowsDesktopTargets>true</ImportWindowsDesktopTargets>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <ApplicationIcon>SunabaSDK.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug %28Extra%29|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug %28Extra%29\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;DEBUG_EXTRA</DefineConstants>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="SunabaSDK.ico" />
+    <Content Include="Translations\SunabaSDK.Editor.en.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Translations\SunabaSDK.Editor.fr.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Translations\SunabaSDK.Editor.it.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SunabaSDK.BspEditor\SunabaSDK.BspEditor.csproj" />
+    <ProjectReference Include="..\SunabaSDK.BspEditor.Editing\SunabaSDK.BspEditor.Editing.csproj" />
+    <ProjectReference Include="..\SunabaSDK.BspEditor.Rendering\SunabaSDK.BspEditor.Rendering.csproj" />
+    <ProjectReference Include="..\SunabaSDK.BspEditor.Tools\SunabaSDK.BspEditor.Tools.csproj" />
+    <ProjectReference Include="..\SunabaSDK.Common\SunabaSDK.Common.csproj" />
+    <ProjectReference Include="..\SunabaSDK.Shell\SunabaSDK.Shell.csproj" />
+  </ItemGroup>
+</Project>

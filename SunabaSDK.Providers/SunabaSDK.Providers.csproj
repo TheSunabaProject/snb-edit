@@ -1,0 +1,35 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net6.0-windows</TargetFramework>
+	<RuntimeIdentifiers>win-x64;win-x86</RuntimeIdentifiers>
+    <OutputType>Library</OutputType>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug %28Extra%29|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug %28Extra%29\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;DEBUG_EXTRA</DefineConstants>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Remove="Texture\Pk3Provider.cs" />
+    <Compile Remove="Texture\VmtProvider.cs" />
+    <Compile Remove="Texture\Vtf\VtfImageFlag.cs" />
+    <Compile Remove="Texture\Vtf\VtfImageFormat.cs" />
+    <Compile Remove="Texture\Vtf\VtfProvider.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SunabaSDK.Common\SunabaSDK.Common.csproj" />
+    <ProjectReference Include="..\SunabaSDK.DataStructures\SunabaSDK.DataStructures.csproj" />
+    <ProjectReference Include="..\SunabaSDK.Filesystem\SunabaSDK.Filesystem.csproj" />
+    <ProjectReference Include="..\SunabaSDK.Packages\SunabaSDK.Packages.csproj" />
+    <ProjectReference Include="..\SunabaSDK.Rendering\SunabaSDK.Rendering.csproj" />
+  </ItemGroup>
+</Project>
