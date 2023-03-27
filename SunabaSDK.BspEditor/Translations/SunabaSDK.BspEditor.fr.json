@@ -55,34 +55,60 @@
         }
     },
     "Environment": {
-        "Goldsource": {
-            "AutomaticVisgroups": {
-                "Entities": "Entités",
-                "ToolBrushes": "Blocs d'outils",
-                "WorldGeometry": "Géométrie du monde",
+      "Goldsource": {
+        "AutomaticVisgroups": {
+          "Entities": "Entités",
+          "ToolBrushes": "Blocs d'outils",
+          "WorldGeometry": "Géométrie du monde",
 
-                "BrushEntities": "Entités blocs",
-                "PointEntities": "Entités points",
-                "Lights": "Lumières",
-                "Triggers": "Déclencheurs",
-                "Nodes": "Noeuds",
+          "BrushEntities": "Entités blocs",
+          "PointEntities": "Entités points",
+          "Lights": "Lumières",
+          "Triggers": "Déclencheurs",
+          "Nodes": "Noeuds",
 
-                "Bevel": "Biseau (Bevel)",
-                "Hint": "Astuce (Hint)",
-                "Origin": "Origine (Origin)",
-                "Skip": "Passer (Skip)",
-                "Trigger": "Déclencheurs (Trigger)",
+          "Bevel": "Biseau (Bevel)",
+          "Hint": "Astuce (Hint)",
+          "Origin": "Origine (Origin)",
+          "Skip": "Passer (Skip)",
+          "Trigger": "Déclencheurs (Trigger)",
 
-                "Brushes": "Blocs",
-                "Null": "Vide (Null)",
-                "Sky": "Ciel (Sky)",
-                "Water": "Eau (Water)"
-            },
-            "GoldsourceEnvironmentFactory": {
-                "Description": "GoldSrc (HL1)"
-            }
+          "Brushes": "Blocs",
+          "Null": "Vide (Null)",
+          "Sky": "Ciel (Sky)",
+          "Water": "Eau (Water)"
+        },
+        "GoldsourceEnvironmentFactory": {
+          "Description": "GoldSrc (HL1)"
+        },
+        "Sunaba": {
+          "AutomaticVisgroups": {
+            "Entities": "Entités",
+            "ToolBrushes": "Blocs d'outils",
+            "WorldGeometry": "Géométrie du monde",
+
+            "BrushEntities": "Entités blocs",
+            "PointEntities": "Entités points",
+            "Lights": "Lumières",
+            "Triggers": "Déclencheurs",
+            "Nodes": "Noeuds",
+
+            "Bevel": "Biseau (Bevel)",
+            "Hint": "Astuce (Hint)",
+            "Origin": "Origine (Origin)",
+            "Skip": "Passer (Skip)",
+            "Trigger": "Déclencheurs (Trigger)",
+
+            "Brushes": "Blocs",
+            "Null": "Vide (Null)",
+            "Sky": "Ciel (Sky)",
+            "Water": "Eau (Water)"
+          },
+          "SunabaEnvironmentFactory": {
+            "Description": "Sunaba"
+          }
         }
-    },
+      },
     "Grid": {
         "NoGridFactory": {
             "Name": "Pas de grille",

@@ -1,6 +1,7 @@
 ﻿using SunabaSDK.BspEditor.Environment;
 using SunabaSDK.BspEditor.Environment.Controls;
 using SunabaSDK.BspEditor.Environment.Empty;
+//using SunabaSDK.BspEditor.Environment.Godot;
 using SunabaSDK.BspEditor.Primitives;
 using SunabaSDK.BspEditor.Providers;
 using SunabaSDK.BspEditor.Providers.Processors;
@@ -81,7 +82,7 @@ namespace SunabaSDK.BspEditor.Documents
         /// Get an environment for the document.
         /// If more than one environment exists, then the user will be prompted.
         /// If the user chooses to cancel, null will be returned.
-        /// If no environment is configured, <see cref="EmptyEnvironment"/> will be returned.
+        /// If no environment is configured, <see cref="GodotEnvironment"/> will be returned.
         /// </summary>
         private async Task<IEnvironment> GetEnvironment()
         {

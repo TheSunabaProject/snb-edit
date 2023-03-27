@@ -40,6 +40,9 @@
     <Compile Update="Environment\Goldsource\GoldsourceEnvironmentEditor.cs">
       <SubType>UserControl</SubType>
     </Compile>
+	<Compile Update="Environment\Sunaba\SunabaEnvironmentEditor.cs">
+	  <SubType>UserControl</SubType>
+	</Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Resources\DottedGrid.png" />
